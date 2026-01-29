@@ -19,7 +19,9 @@ const PORT = process.env.PORT || 5000;
 
 // Middleware
 app.use(
-  cors(),
+  cors({
+    origin:*,
+  }),
 );
 
 app.use(cookieParser());
